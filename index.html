@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+<section class="registration">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="images/homeWorks.png" alt="logo">
+            </a>
+        </div>
+        <div class="order">
+            <div class="order-registration">
+                <h1 class="order-title" id="order-title">Get your free account</h1>
+                <div class="order-info">
+                    Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+                </div>
+                <form id="form" method="post">
+                    <div class="order-form">
+                        <label id="label-full-name">
+                            <div class="user-info">Full Name</div>
+                            <input type="text" class="order-input" id="full-name">
+                            <div class="error-input">Full Name может содержать только буквы и пробел</div>
+                        </label>
+
+                        <label id="label-username">
+                            <div class="user-info">Your username</div>
+                            <input type="text" class="order-input" id="username">
+                            <div class="error-input">Введите корректный "Your username"</div>
+                        </label>
+
+                        <label id="label-email">
+                            <div class="user-info">E-mail</div>
+                            <input type="email" class="order-input" id="email">
+                            <div class="error-input">Заполните поле E-mail корректно</div>
+                        </label>
+
+                        <label class="password" id="label-password">
+                            <div class="user-info">Password</div>
+                            <input type="password" class="order-input password-input" id="password" name="password">
+                            <div class="error-input">Password должен содержать минимум 8 символов, хотя бы одна буква в
+                                верхнем регистре, хотя бы одна цифра, хотя бы один спецсимвол
+                            </div>
+                            <a href="#" class="password-control"></a>
+                        </label>
+
+                        <label class="password password-del" id="label-repeat-password">
+                            <div class="user-info">Repeat Password</div>
+                            <input type="password" class="order-input password-input" id="repeat-password" name="password">
+                            <div class="error-input">Repeat Password должно совподать с полем Password</div>
+                        </label>
+
+                        <label class="order-agree" id="label-checked">
+                            <input type="checkbox" class="order-check" id="checked">
+                            <div class="order-agree-text">Agree to our Terms of Service and Privacy Statement</div>
+                        </label>
+
+                        <div class="order-actions">
+                            <button type="button" class="btn" id="btn">Sign Up</button>
+                        </div>
+
+                        <div class="user-info-account">
+                            <div id="account">Already have an account?</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="order-images">
+                <img src="images/image.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <div class="popup-text">На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию.</div>
+        <button class="popup-btn">Ok</button>
+    </div>
+</div>
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
